@@ -1,7 +1,0 @@
-$dokka.format:gfm
-$dokka.linkExtension:md
-
-coil.decode
-coil.drawable
-coil.request
-coil.transform

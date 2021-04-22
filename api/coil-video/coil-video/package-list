@@ -1,0 +1,35 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:coil.decode////PointingToDeclaration/coil-video/coil.decode/index.html
+$dokka.location:coil.decode/VideoFrameDecoder.Companion///PointingToDeclaration/coil-video/coil.decode/-video-frame-decoder/-companion/index.html
+$dokka.location:coil.decode/VideoFrameDecoder.Companion/VIDEO_FRAME_MICROS_KEY/#/PointingToDeclaration/coil-video/coil.decode/-video-frame-decoder/-companion/-v-i-d-e-o_-f-r-a-m-e_-m-i-c-r-o-s_-k-e-y.html
+$dokka.location:coil.decode/VideoFrameDecoder.Companion/VIDEO_FRAME_OPTION_KEY/#/PointingToDeclaration/coil-video/coil.decode/-video-frame-decoder/-companion/-v-i-d-e-o_-f-r-a-m-e_-o-p-t-i-o-n_-k-e-y.html
+$dokka.location:coil.decode/VideoFrameDecoder///PointingToDeclaration/coil-video/coil.decode/-video-frame-decoder/index.html
+$dokka.location:coil.decode/VideoFrameDecoder/VideoFrameDecoder/#android.content.Context/PointingToDeclaration/coil-video/coil.decode/-video-frame-decoder/-video-frame-decoder.html
+$dokka.location:coil.decode/VideoFrameDecoder/decode/#coil.bitmap.BitmapPool#okio.BufferedSource#coil.size.Size#coil.decode.Options/PointingToDeclaration/coil-video/coil.decode/-video-frame-decoder/decode.html
+$dokka.location:coil.decode/VideoFrameDecoder/handles/#okio.BufferedSource#kotlin.String?/PointingToDeclaration/coil-video/coil.decode/-video-frame-decoder/handles.html
+$dokka.location:coil.fetch////PointingToDeclaration/coil-video/coil.fetch/index.html
+$dokka.location:coil.fetch/VideoFrameFetcher.Companion///PointingToDeclaration/coil-video/coil.fetch/-video-frame-fetcher/-companion/index.html
+$dokka.location:coil.fetch/VideoFrameFetcher.Companion/VIDEO_FRAME_MICROS_KEY/#/PointingToDeclaration/coil-video/coil.fetch/-video-frame-fetcher/-companion/-v-i-d-e-o_-f-r-a-m-e_-m-i-c-r-o-s_-k-e-y.html
+$dokka.location:coil.fetch/VideoFrameFetcher.Companion/VIDEO_FRAME_OPTION_KEY/#/PointingToDeclaration/coil-video/coil.fetch/-video-frame-fetcher/-companion/-v-i-d-e-o_-f-r-a-m-e_-o-p-t-i-o-n_-k-e-y.html
+$dokka.location:coil.fetch/VideoFrameFetcher///PointingToDeclaration/coil-video/coil.fetch/-video-frame-fetcher/index.html
+$dokka.location:coil.fetch/VideoFrameFetcher/VideoFrameFetcher/#android.content.Context/PointingToDeclaration/coil-video/coil.fetch/-video-frame-fetcher/-video-frame-fetcher.html
+$dokka.location:coil.fetch/VideoFrameFetcher/fetch/#coil.bitmap.BitmapPool#TypeParam(bounds=[kotlin.Any])#coil.size.Size#coil.decode.Options/PointingToDeclaration/coil-video/coil.fetch/-video-frame-fetcher/fetch.html
+$dokka.location:coil.fetch/VideoFrameFileFetcher///PointingToDeclaration/coil-video/coil.fetch/-video-frame-file-fetcher/index.html
+$dokka.location:coil.fetch/VideoFrameFileFetcher/VideoFrameFileFetcher/#android.content.Context/PointingToDeclaration/coil-video/coil.fetch/-video-frame-file-fetcher/-video-frame-file-fetcher.html
+$dokka.location:coil.fetch/VideoFrameFileFetcher/handles/#java.io.File/PointingToDeclaration/coil-video/coil.fetch/-video-frame-file-fetcher/handles.html
+$dokka.location:coil.fetch/VideoFrameFileFetcher/key/#java.io.File/PointingToDeclaration/coil-video/coil.fetch/-video-frame-file-fetcher/key.html
+$dokka.location:coil.fetch/VideoFrameUriFetcher///PointingToDeclaration/coil-video/coil.fetch/-video-frame-uri-fetcher/index.html
+$dokka.location:coil.fetch/VideoFrameUriFetcher/VideoFrameUriFetcher/#android.content.Context/PointingToDeclaration/coil-video/coil.fetch/-video-frame-uri-fetcher/-video-frame-uri-fetcher.html
+$dokka.location:coil.fetch/VideoFrameUriFetcher/handles/#android.net.Uri/PointingToDeclaration/coil-video/coil.fetch/-video-frame-uri-fetcher/handles.html
+$dokka.location:coil.fetch/VideoFrameUriFetcher/key/#android.net.Uri/PointingToDeclaration/coil-video/coil.fetch/-video-frame-uri-fetcher/key.html
+$dokka.location:coil.request////PointingToDeclaration/coil-video/coil.request/index.html
+$dokka.location:coil.request//videoFrameMicros/coil.request.ImageRequest.Builder#kotlin.Long/PointingToDeclaration/coil-video/coil.request/video-frame-micros.html
+$dokka.location:coil.request//videoFrameMicros/coil.request.Parameters#/PointingToDeclaration/coil-video/coil.request/video-frame-micros.html
+$dokka.location:coil.request//videoFrameMillis/coil.request.ImageRequest.Builder#kotlin.Long/PointingToDeclaration/coil-video/coil.request/video-frame-millis.html
+$dokka.location:coil.request//videoFrameOption/coil.request.ImageRequest.Builder#kotlin.Int/PointingToDeclaration/coil-video/coil.request/video-frame-option.html
+$dokka.location:coil.request//videoFrameOption/coil.request.Parameters#/PointingToDeclaration/coil-video/coil.request/video-frame-option.html
+coil.decode
+coil.fetch
+coil.request
+
