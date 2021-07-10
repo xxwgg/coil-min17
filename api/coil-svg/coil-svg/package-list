@@ -1,9 +1,0 @@
-$dokka.format:html-v1
-$dokka.linkExtension:html
-$dokka.location:coil.decode////PointingToDeclaration/coil-svg/coil.decode/index.html
-$dokka.location:coil.decode/SvgDecoder///PointingToDeclaration/coil-svg/coil.decode/-svg-decoder/index.html
-$dokka.location:coil.decode/SvgDecoder/SvgDecoder/#android.content.Context#kotlin.Boolean/PointingToDeclaration/coil-svg/coil.decode/-svg-decoder/-svg-decoder.html
-$dokka.location:coil.decode/SvgDecoder/decode/#coil.bitmap.BitmapPool#okio.BufferedSource#coil.size.Size#coil.decode.Options/PointingToDeclaration/coil-svg/coil.decode/-svg-decoder/decode.html
-$dokka.location:coil.decode/SvgDecoder/handles/#okio.BufferedSource#kotlin.String?/PointingToDeclaration/coil-svg/coil.decode/-svg-decoder/handles.html
-coil.decode
-
