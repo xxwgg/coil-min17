@@ -11,8 +11,7 @@
     <span class=n>painter</span> <span class=o>=</span> <span class=n>rememberImagePainter</span><span class=p>(</span>
         <span class=n>data</span> <span class=o>=</span> <span class=s>&quot;https://www.example.com/image.jpg&quot;</span><span class=p>,</span>
         <span class=n>builder</span> <span class=o>=</span> <span class=p>{</span>
-            <span class=n>transformation</span><span class=p>(</span><span class=n>CircleCropTransformation</span><span class=p>())</span>
-            <span class=n>allowHardware</span><span class=p>(</span><span class=kc>false</span><span class=p>)</span>
+            <span class=n>transformations</span><span class=p>(</span><span class=n>CircleCropTransformation</span><span class=p>())</span>
         <span class=p>}</span>
     <span class=p>),</span>
     <span class=n>contentDescription</span> <span class=o>=</span> <span class=kc>null</span><span class=p>,</span>
@@ -52,7 +51,7 @@
     <span class=n>painter</span> <span class=o>=</span> <span class=n>rememberCoilPainter</span><span class=p>(</span>
         <span class=n>request</span> <span class=o>=</span> <span class=s>&quot;https://www.example.com/image.jpg&quot;</span><span class=p>,</span>
         <span class=n>requestBuilder</span> <span class=o>=</span> <span class=p>{</span>
-            <span class=n>allowHardware</span><span class=p>(</span><span class=kc>false</span><span class=p>)</span>
+            <span class=n>transformations</span><span class=p>(</span><span class=n>CircleCropTransformation</span><span class=p>())</span>
         <span class=p>},</span>
         <span class=n>shouldRefetchOnSizeChange</span> <span class=o>=</span> <span class=n>ShouldRefetchOnSizeChange</span> <span class=p>{</span> <span class=n>_</span><span class=p>,</span> <span class=n>_</span> <span class=o>-&gt;</span> <span class=kc>true</span> <span class=p>},</span>
         <span class=n>fadeIn</span> <span class=o>=</span> <span class=kc>true</span><span class=p>,</span>
@@ -68,9 +67,9 @@
         <span class=n>data</span> <span class=o>=</span> <span class=s>&quot;https://www.example.com/image.jpg&quot;</span><span class=p>,</span>
         <span class=n>onExecute</span> <span class=o>=</span> <span class=n>ExecuteCallback</span> <span class=p>{</span> <span class=n>_</span><span class=p>,</span> <span class=n>_</span> <span class=o>-&gt;</span> <span class=kc>true</span> <span class=p>},</span>
         <span class=n>builder</span> <span class=o>=</span> <span class=p>{</span>
-            <span class=n>allowHardware</span><span class=p>(</span><span class=kc>false</span><span class=p>)</span>
             <span class=n>crossfade</span><span class=p>(</span><span class=kc>true</span><span class=p>)</span>
             <span class=n>placeholder</span><span class=p>(</span><span class=n>R</span><span class=p>.</span><span class=na>drawable</span><span class=p>.</span><span class=na>placeholder</span><span class=p>)</span>
+            <span class=n>transformations</span><span class=p>(</span><span class=n>CircleCropTransformation</span><span class=p>())</span>
         <span class=p>}</span>
     <span class=p>),</span>
     <span class=n>contentDescription</span> <span class=o>=</span> <span class=kc>null</span><span class=p>,</span>
