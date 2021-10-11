@@ -5,6 +5,7 @@
     <span class=o>}</span>
     <span class=n>kotlinOptions</span> <span class=o>{</span>
         <span class=n>jvmTarget</span> <span class=o>=</span> <span class=s2>&quot;1.8&quot;</span>
+        <span class=n>freeCompilerArgs</span> <span class=o>+=</span> <span class=s2>&quot;-Xjvm-default=all&quot;</span> <span class=c1>// Only required for 2.x.</span>
     <span class=o>}</span>
 <span class=o>}</span>
 </code></pre></div> <p>Gradle Kotlin DSL (<code>.gradle.kts</code>):</p> <div class=highlight><pre><span></span><code><span class=n>android</span> <span class=p>{</span>
@@ -14,6 +15,7 @@
     <span class=p>}</span>
     <span class=n>kotlinOptions</span> <span class=p>{</span>
         <span class=n>jvmTarget</span> <span class=o>=</span> <span class=s>&quot;1.8&quot;</span>
+        <span class=n>freeCompilerArgs</span> <span class=o>+=</span> <span class=s>&quot;-Xjvm-default=all&quot;</span> <span class=c1>// Only required for 2.x.</span>
     <span class=p>}</span>
 <span class=p>}</span>
 </code></pre></div> <h2 id=image-loaders>Image Loaders<a class=headerlink href=#image-loaders title="Permanent link">&para;</a></h2> <p><a href=../image_loaders/ ><code>ImageLoader</code></a>s are service classes that execute <a href=../image_requests/ ><code>ImageRequest</code></a>s. <code>ImageLoader</code>s handle caching, data fetching, image decoding, request management, bitmap pooling, memory management, and more. New instances can be created and configured using a builder:</p> <div class=highlight><pre><span></span><code><span class=kd>val</span> <span class=nv>imageLoader</span> <span class=o>=</span> <span class=n>ImageLoader</span><span class=p>.</span><span class=na>Builder</span><span class=p>(</span><span class=n>context</span><span class=p>)</span>
