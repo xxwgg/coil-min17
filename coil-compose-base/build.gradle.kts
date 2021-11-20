@@ -31,6 +31,7 @@ dependencies {
     implementation(Library.ACCOMPANIST_DRAWABLE_PAINTER)
 
     api(Library.COMPOSE_FOUNDATION)
+    api(Library.COMPOSE_MATERIAL)
 
     addTestDependencies(KotlinCompilerVersion.VERSION)
     addAndroidTestDependencies(KotlinCompilerVersion.VERSION)
