@@ -56,6 +56,7 @@
 <span class=p>)</span>
 </code></pre></div> <p>Custom <a href=../transitions/ ><code>Transition</code></a>s do not work with <code>AsyncImage</code>, <code>SubcomposeAsyncImage</code>, or <code>rememberAsyncImagePainter</code> as they require a <code>View</code> reference. <code>CrossfadeTransition</code> works due to special internal support.</p> <p>That said, it's possible to create custom transitions in Compose by observing the <code>AsyncImagePainter</code>'s state:</p> <div class=highlight><pre><span></span><code><span class=kd>val</span> <span class=nv>painter</span> <span class=o>=</span> <span class=n>rememberAsyncImagePainter</span><span class=p>(</span><span class=s>&quot;https://example.com/image.jpg&quot;</span><span class=p>)</span>
 
+<span class=kd>val</span> <span class=nv>state</span> <span class=o>=</span> <span class=n>painter</span><span class=p>.</span><span class=na>state</span>
 <span class=k>if</span> <span class=p>(</span><span class=n>state</span> <span class=k>is</span> <span class=n>AsyncImagePainter</span><span class=p>.</span><span class=na>State</span><span class=p>.</span><span class=na>Success</span> <span class=o>&amp;&amp;</span> <span class=n>state</span><span class=p>.</span><span class=na>dataSource</span> <span class=o>!=</span> <span class=n>DataSource</span><span class=p>.</span><span class=na>MEMORY_CACHE</span><span class=p>)</span> <span class=p>{</span>
     <span class=c1>// Perform the transition animation.</span>
 <span class=p>}</span>
