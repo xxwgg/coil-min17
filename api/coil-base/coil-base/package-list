@@ -148,9 +148,7 @@ $dokka.location:coil.intercept////PointingToDeclaration/coil-base/coil.intercep
 $dokka.location:coil.intercept/Interceptor.Chain///PointingToDeclaration/coil-base/coil.intercept/-interceptor/-chain/index.html
 $dokka.location:coil.intercept/Interceptor.Chain/proceed/#coil.request.ImageRequest/PointingToDeclaration/coil-base/coil.intercept/-interceptor/-chain/proceed.html
 $dokka.location:coil.intercept/Interceptor.Chain/request/#/PointingToDeclaration/coil-base/coil.intercept/-interceptor/-chain/request.html
-$dokka.location:coil.intercept/Interceptor.Chain/scale/#/PointingToDeclaration/coil-base/coil.intercept/-interceptor/-chain/scale.html
 $dokka.location:coil.intercept/Interceptor.Chain/size/#/PointingToDeclaration/coil-base/coil.intercept/-interceptor/-chain/size.html
-$dokka.location:coil.intercept/Interceptor.Chain/withScale/#coil.size.Scale/PointingToDeclaration/coil-base/coil.intercept/-interceptor/-chain/with-scale.html
 $dokka.location:coil.intercept/Interceptor.Chain/withSize/#coil.size.Size/PointingToDeclaration/coil-base/coil.intercept/-interceptor/-chain/with-size.html
 $dokka.location:coil.intercept/Interceptor///PointingToDeclaration/coil-base/coil.intercept/-interceptor/index.html
 $dokka.location:coil.intercept/Interceptor/intercept/#coil.intercept.Interceptor.Chain/PointingToDeclaration/coil-base/coil.intercept/-interceptor/intercept.html
@@ -226,11 +224,11 @@ $dokka.location:coil.request/DefaultRequestOptions/precision/#/PointingToDeclara
 $dokka.location:coil.request/DefaultRequestOptions/transformationDispatcher/#/PointingToDeclaration/coil-base/coil.request/-default-request-options/transformation-dispatcher.html
 $dokka.location:coil.request/DefaultRequestOptions/transitionFactory/#/PointingToDeclaration/coil-base/coil.request/-default-request-options/transition-factory.html
 $dokka.location:coil.request/DefinedRequestOptions///PointingToDeclaration/coil-base/coil.request/-defined-request-options/index.html
-$dokka.location:coil.request/DefinedRequestOptions/DefinedRequestOptions/#androidx.lifecycle.Lifecycle?#coil.size.SizeResolver?#coil.size.ScaleResolver?#kotlinx.coroutines.CoroutineDispatcher?#kotlinx.coroutines.CoroutineDispatcher?#kotlinx.coroutines.CoroutineDispatcher?#kotlinx.coroutines.CoroutineDispatcher?#coil.transition.Transition.Factory?#coil.size.Precision?#android.graphics.Bitmap.Config?#kotlin.Boolean?#kotlin.Boolean?#coil.request.CachePolicy?#coil.request.CachePolicy?#coil.request.CachePolicy?/PointingToDeclaration/coil-base/coil.request/-defined-request-options/-defined-request-options.html
+$dokka.location:coil.request/DefinedRequestOptions/DefinedRequestOptions/#androidx.lifecycle.Lifecycle?#coil.size.SizeResolver?#coil.size.Scale?#kotlinx.coroutines.CoroutineDispatcher?#kotlinx.coroutines.CoroutineDispatcher?#kotlinx.coroutines.CoroutineDispatcher?#kotlinx.coroutines.CoroutineDispatcher?#coil.transition.Transition.Factory?#coil.size.Precision?#android.graphics.Bitmap.Config?#kotlin.Boolean?#kotlin.Boolean?#coil.request.CachePolicy?#coil.request.CachePolicy?#coil.request.CachePolicy?/PointingToDeclaration/coil-base/coil.request/-defined-request-options/-defined-request-options.html
 $dokka.location:coil.request/DefinedRequestOptions/allowHardware/#/PointingToDeclaration/coil-base/coil.request/-defined-request-options/allow-hardware.html
 $dokka.location:coil.request/DefinedRequestOptions/allowRgb565/#/PointingToDeclaration/coil-base/coil.request/-defined-request-options/allow-rgb565.html
 $dokka.location:coil.request/DefinedRequestOptions/bitmapConfig/#/PointingToDeclaration/coil-base/coil.request/-defined-request-options/bitmap-config.html
-$dokka.location:coil.request/DefinedRequestOptions/copy/#androidx.lifecycle.Lifecycle?#coil.size.SizeResolver?#coil.size.ScaleResolver?#kotlinx.coroutines.CoroutineDispatcher?#kotlinx.coroutines.CoroutineDispatcher?#kotlinx.coroutines.CoroutineDispatcher?#kotlinx.coroutines.CoroutineDispatcher?#coil.transition.Transition.Factory?#coil.size.Precision?#android.graphics.Bitmap.Config?#kotlin.Boolean?#kotlin.Boolean?#coil.request.CachePolicy?#coil.request.CachePolicy?#coil.request.CachePolicy?/PointingToDeclaration/coil-base/coil.request/-defined-request-options/copy.html
+$dokka.location:coil.request/DefinedRequestOptions/copy/#androidx.lifecycle.Lifecycle?#coil.size.SizeResolver?#coil.size.Scale?#kotlinx.coroutines.CoroutineDispatcher?#kotlinx.coroutines.CoroutineDispatcher?#kotlinx.coroutines.CoroutineDispatcher?#kotlinx.coroutines.CoroutineDispatcher?#coil.transition.Transition.Factory?#coil.size.Precision?#android.graphics.Bitmap.Config?#kotlin.Boolean?#kotlin.Boolean?#coil.request.CachePolicy?#coil.request.CachePolicy?#coil.request.CachePolicy?/PointingToDeclaration/coil-base/coil.request/-defined-request-options/copy.html
 $dokka.location:coil.request/DefinedRequestOptions/decoderDispatcher/#/PointingToDeclaration/coil-base/coil.request/-defined-request-options/decoder-dispatcher.html
 $dokka.location:coil.request/DefinedRequestOptions/diskCachePolicy/#/PointingToDeclaration/coil-base/coil.request/-defined-request-options/disk-cache-policy.html
 $dokka.location:coil.request/DefinedRequestOptions/equals/#kotlin.Any?/PointingToDeclaration/coil-base/coil.request/-defined-request-options/equals.html
@@ -241,7 +239,7 @@ $dokka.location:coil.request/DefinedRequestOptions/lifecycle/#/PointingToDeclara
 $dokka.location:coil.request/DefinedRequestOptions/memoryCachePolicy/#/PointingToDeclaration/coil-base/coil.request/-defined-request-options/memory-cache-policy.html
 $dokka.location:coil.request/DefinedRequestOptions/networkCachePolicy/#/PointingToDeclaration/coil-base/coil.request/-defined-request-options/network-cache-policy.html
 $dokka.location:coil.request/DefinedRequestOptions/precision/#/PointingToDeclaration/coil-base/coil.request/-defined-request-options/precision.html
-$dokka.location:coil.request/DefinedRequestOptions/scaleResolver/#/PointingToDeclaration/coil-base/coil.request/-defined-request-options/scale-resolver.html
+$dokka.location:coil.request/DefinedRequestOptions/scale/#/PointingToDeclaration/coil-base/coil.request/-defined-request-options/scale.html
 $dokka.location:coil.request/DefinedRequestOptions/sizeResolver/#/PointingToDeclaration/coil-base/coil.request/-defined-request-options/size-resolver.html
 $dokka.location:coil.request/DefinedRequestOptions/transformationDispatcher/#/PointingToDeclaration/coil-base/coil.request/-defined-request-options/transformation-dispatcher.html
 $dokka.location:coil.request/DefinedRequestOptions/transitionFactory/#/PointingToDeclaration/coil-base/coil.request/-defined-request-options/transition-factory.html
@@ -303,7 +301,6 @@ $dokka.location:coil.request/ImageRequest.Builder/premultipliedAlpha/#kotlin.Boo
 $dokka.location:coil.request/ImageRequest.Builder/removeHeader/#kotlin.String/PointingToDeclaration/coil-base/coil.request/-image-request/-builder/remove-header.html
 $dokka.location:coil.request/ImageRequest.Builder/removeParameter/#kotlin.String/PointingToDeclaration/coil-base/coil.request/-image-request/-builder/remove-parameter.html
 $dokka.location:coil.request/ImageRequest.Builder/scale/#coil.size.Scale/PointingToDeclaration/coil-base/coil.request/-image-request/-builder/scale.html
-$dokka.location:coil.request/ImageRequest.Builder/scale/#coil.size.ScaleResolver/PointingToDeclaration/coil-base/coil.request/-image-request/-builder/scale.html
 $dokka.location:coil.request/ImageRequest.Builder/setHeader/#kotlin.String#kotlin.String/PointingToDeclaration/coil-base/coil.request/-image-request/-builder/set-header.html
 $dokka.location:coil.request/ImageRequest.Builder/setParameter/#kotlin.String#kotlin.Any?#kotlin.String?/PointingToDeclaration/coil-base/coil.request/-image-request/-builder/set-parameter.html
 $dokka.location:coil.request/ImageRequest.Builder/size/#coil.size.Dimension#coil.size.Dimension/PointingToDeclaration/coil-base/coil.request/-image-request/-builder/size.html
@@ -359,7 +356,7 @@ $dokka.location:coil.request/ImageRequest/placeholder/#/PointingToDeclaration/c
 $dokka.location:coil.request/ImageRequest/placeholderMemoryCacheKey/#/PointingToDeclaration/coil-base/coil.request/-image-request/placeholder-memory-cache-key.html
 $dokka.location:coil.request/ImageRequest/precision/#/PointingToDeclaration/coil-base/coil.request/-image-request/precision.html
 $dokka.location:coil.request/ImageRequest/premultipliedAlpha/#/PointingToDeclaration/coil-base/coil.request/-image-request/premultiplied-alpha.html
-$dokka.location:coil.request/ImageRequest/scaleResolver/#/PointingToDeclaration/coil-base/coil.request/-image-request/scale-resolver.html
+$dokka.location:coil.request/ImageRequest/scale/#/PointingToDeclaration/coil-base/coil.request/-image-request/scale.html
 $dokka.location:coil.request/ImageRequest/sizeResolver/#/PointingToDeclaration/coil-base/coil.request/-image-request/size-resolver.html
 $dokka.location:coil.request/ImageRequest/tags/#/PointingToDeclaration/coil-base/coil.request/-image-request/tags.html
 $dokka.location:coil.request/ImageRequest/target/#/PointingToDeclaration/coil-base/coil.request/-image-request/target.html
@@ -446,7 +443,9 @@ $dokka.location:coil.request/Tags/tag/#java.lang.Class[TypeParam(bounds=[kotlin.
 $dokka.location:coil.request/Tags/toString/#/PointingToDeclaration/coil-base/coil.request/-tags/to-string.html
 $dokka.location:coil.size////PointingToDeclaration/coil-base/coil.size/index.html
 $dokka.location:coil.size//Dimension/#kotlin.Int/PointingToDeclaration/coil-base/coil.size/-dimension.html
-$dokka.location:coil.size//ScaleResolver/#coil.size.Scale/PointingToDeclaration/coil-base/coil.size/-scale-resolver.html
+$dokka.location:coil.size//Size/#coil.size.Dimension#kotlin.Int/PointingToDeclaration/coil-base/coil.size/-size.html
+$dokka.location:coil.size//Size/#kotlin.Int#coil.size.Dimension/PointingToDeclaration/coil-base/coil.size/-size.html
+$dokka.location:coil.size//Size/#kotlin.Int#kotlin.Int/PointingToDeclaration/coil-base/coil.size/-size.html
 $dokka.location:coil.size//SizeResolver/#coil.size.Size/PointingToDeclaration/coil-base/coil.size/-size-resolver.html
 $dokka.location:coil.size//ViewSizeResolver/#TypeParam(bounds=[android.view.View])#kotlin.Boolean/PointingToDeclaration/coil-base/coil.size/-view-size-resolver.html
 $dokka.location:coil.size//isOriginal/coil.size.Size#/PointingToDeclaration/coil-base/coil.size/is-original.html
@@ -467,15 +466,10 @@ $dokka.location:coil.size/Precision///PointingToDeclaration/coil-base/coil.size
 $dokka.location:coil.size/Scale.FILL///PointingToDeclaration/coil-base/coil.size/-scale/-f-i-l-l/index.html
 $dokka.location:coil.size/Scale.FIT///PointingToDeclaration/coil-base/coil.size/-scale/-f-i-t/index.html
 $dokka.location:coil.size/Scale///PointingToDeclaration/coil-base/coil.size/-scale/index.html
-$dokka.location:coil.size/ScaleResolver///PointingToDeclaration/coil-base/coil.size/-scale-resolver/index.html
-$dokka.location:coil.size/ScaleResolver/scale/#/PointingToDeclaration/coil-base/coil.size/-scale-resolver/scale.html
 $dokka.location:coil.size/Size.Companion///PointingToDeclaration/coil-base/coil.size/-size/-companion/index.html
 $dokka.location:coil.size/Size.Companion/ORIGINAL/#/PointingToDeclaration/coil-base/coil.size/-size/-companion/-o-r-i-g-i-n-a-l.html
 $dokka.location:coil.size/Size///PointingToDeclaration/coil-base/coil.size/-size/index.html
 $dokka.location:coil.size/Size/Size/#coil.size.Dimension#coil.size.Dimension/PointingToDeclaration/coil-base/coil.size/-size/-size.html
-$dokka.location:coil.size/Size/Size/#coil.size.Dimension#kotlin.Int/PointingToDeclaration/coil-base/coil.size/-size/-size.html
-$dokka.location:coil.size/Size/Size/#kotlin.Int#coil.size.Dimension/PointingToDeclaration/coil-base/coil.size/-size/-size.html
-$dokka.location:coil.size/Size/Size/#kotlin.Int#kotlin.Int/PointingToDeclaration/coil-base/coil.size/-size/-size.html
 $dokka.location:coil.size/Size/height/#/PointingToDeclaration/coil-base/coil.size/-size/height.html
 $dokka.location:coil.size/Size/width/#/PointingToDeclaration/coil-base/coil.size/-size/width.html
 $dokka.location:coil.size/SizeResolver///PointingToDeclaration/coil-base/coil.size/-size-resolver/index.html
@@ -601,8 +595,6 @@ $dokka.location:coil/EventListener/onCancel/#coil.request.ImageRequest/PointingT
 $dokka.location:coil/EventListener/onError/#coil.request.ImageRequest#coil.request.ErrorResult/PointingToDeclaration/coil-base/coil/-event-listener/on-error.html
 $dokka.location:coil/EventListener/onStart/#coil.request.ImageRequest/PointingToDeclaration/coil-base/coil/-event-listener/on-start.html
 $dokka.location:coil/EventListener/onSuccess/#coil.request.ImageRequest#coil.request.SuccessResult/PointingToDeclaration/coil-base/coil/-event-listener/on-success.html
-$dokka.location:coil/EventListener/resolveScaleEnd/#coil.request.ImageRequest#coil.size.Scale/PointingToDeclaration/coil-base/coil/-event-listener/resolve-scale-end.html
-$dokka.location:coil/EventListener/resolveScaleStart/#coil.request.ImageRequest/PointingToDeclaration/coil-base/coil/-event-listener/resolve-scale-start.html
 $dokka.location:coil/EventListener/resolveSizeEnd/#coil.request.ImageRequest#coil.size.Size/PointingToDeclaration/coil-base/coil/-event-listener/resolve-size-end.html
 $dokka.location:coil/EventListener/resolveSizeStart/#coil.request.ImageRequest/PointingToDeclaration/coil-base/coil/-event-listener/resolve-size-start.html
 $dokka.location:coil/EventListener/transformEnd/#coil.request.ImageRequest#android.graphics.Bitmap/PointingToDeclaration/coil-base/coil/-event-listener/transform-end.html
