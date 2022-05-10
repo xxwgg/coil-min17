@@ -450,14 +450,14 @@ $dokka.location:coil.size//SizeResolver/#coil.size.Size/PointingToDeclaration/c
 $dokka.location:coil.size//ViewSizeResolver/#TypeParam(bounds=[android.view.View])#kotlin.Boolean/PointingToDeclaration/coil-base/coil.size/-view-size-resolver.html
 $dokka.location:coil.size//isOriginal/coil.size.Size#/PointingToDeclaration/coil-base/coil.size/is-original.html
 $dokka.location:coil.size//pxOrElse/coil.size.Dimension#kotlin.Function0[kotlin.Int]/PointingToDeclaration/coil-base/coil.size/px-or-else.html
-$dokka.location:coil.size/Dimension.Original///PointingToDeclaration/coil-base/coil.size/-dimension/-original/index.html
-$dokka.location:coil.size/Dimension.Original/toString/#/PointingToDeclaration/coil-base/coil.size/-dimension/-original/to-string.html
 $dokka.location:coil.size/Dimension.Pixels///PointingToDeclaration/coil-base/coil.size/-dimension/-pixels/index.html
 $dokka.location:coil.size/Dimension.Pixels/Pixels/#kotlin.Int/PointingToDeclaration/coil-base/coil.size/-dimension/-pixels/-pixels.html
 $dokka.location:coil.size/Dimension.Pixels/equals/#kotlin.Any?/PointingToDeclaration/coil-base/coil.size/-dimension/-pixels/equals.html
 $dokka.location:coil.size/Dimension.Pixels/hashCode/#/PointingToDeclaration/coil-base/coil.size/-dimension/-pixels/hash-code.html
 $dokka.location:coil.size/Dimension.Pixels/px/#/PointingToDeclaration/coil-base/coil.size/-dimension/-pixels/px.html
 $dokka.location:coil.size/Dimension.Pixels/toString/#/PointingToDeclaration/coil-base/coil.size/-dimension/-pixels/to-string.html
+$dokka.location:coil.size/Dimension.Undefined///PointingToDeclaration/coil-base/coil.size/-dimension/-undefined/index.html
+$dokka.location:coil.size/Dimension.Undefined/toString/#/PointingToDeclaration/coil-base/coil.size/-dimension/-undefined/to-string.html
 $dokka.location:coil.size/Dimension///PointingToDeclaration/coil-base/coil.size/-dimension/index.html
 $dokka.location:coil.size/Precision.AUTOMATIC///PointingToDeclaration/coil-base/coil.size/-precision/-a-u-t-o-m-a-t-i-c/index.html
 $dokka.location:coil.size/Precision.EXACT///PointingToDeclaration/coil-base/coil.size/-precision/-e-x-a-c-t/index.html
