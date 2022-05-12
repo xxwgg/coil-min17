@@ -38,7 +38,6 @@ $dokka.location:coil.drawable/MovieDrawable/draw/#android.graphics.Canvas/Pointi
 $dokka.location:coil.drawable/MovieDrawable/getAnimatedTransformation/#/PointingToDeclaration/coil-gif/coil.drawable/-movie-drawable/get-animated-transformation.html
 $dokka.location:coil.drawable/MovieDrawable/getIntrinsicHeight/#/PointingToDeclaration/coil-gif/coil.drawable/-movie-drawable/get-intrinsic-height.html
 $dokka.location:coil.drawable/MovieDrawable/getIntrinsicWidth/#/PointingToDeclaration/coil-gif/coil.drawable/-movie-drawable/get-intrinsic-width.html
-$dokka.location:coil.drawable/MovieDrawable/getOpacity/#/PointingToDeclaration/coil-gif/coil.drawable/-movie-drawable/get-opacity.html
 $dokka.location:coil.drawable/MovieDrawable/getRepeatCount/#/PointingToDeclaration/coil-gif/coil.drawable/-movie-drawable/get-repeat-count.html
 $dokka.location:coil.drawable/MovieDrawable/isRunning/#/PointingToDeclaration/coil-gif/coil.drawable/-movie-drawable/is-running.html
 $dokka.location:coil.drawable/MovieDrawable/registerAnimationCallback/#androidx.vectordrawable.graphics.drawable.Animatable2Compat.AnimationCallback/PointingToDeclaration/coil-gif/coil.drawable/-movie-drawable/register-animation-callback.html
@@ -58,7 +57,6 @@ $dokka.location:coil.drawable/ScaleDrawable/getAlpha/#/PointingToDeclaration/co
 $dokka.location:coil.drawable/ScaleDrawable/getColorFilter/#/PointingToDeclaration/coil-gif/coil.drawable/-scale-drawable/get-color-filter.html
 $dokka.location:coil.drawable/ScaleDrawable/getIntrinsicHeight/#/PointingToDeclaration/coil-gif/coil.drawable/-scale-drawable/get-intrinsic-height.html
 $dokka.location:coil.drawable/ScaleDrawable/getIntrinsicWidth/#/PointingToDeclaration/coil-gif/coil.drawable/-scale-drawable/get-intrinsic-width.html
-$dokka.location:coil.drawable/ScaleDrawable/getOpacity/#/PointingToDeclaration/coil-gif/coil.drawable/-scale-drawable/get-opacity.html
 $dokka.location:coil.drawable/ScaleDrawable/invalidateDrawable/#android.graphics.drawable.Drawable/PointingToDeclaration/coil-gif/coil.drawable/-scale-drawable/invalidate-drawable.html
 $dokka.location:coil.drawable/ScaleDrawable/isRunning/#/PointingToDeclaration/coil-gif/coil.drawable/-scale-drawable/is-running.html
 $dokka.location:coil.drawable/ScaleDrawable/scale/#/PointingToDeclaration/coil-gif/coil.drawable/-scale-drawable/scale.html

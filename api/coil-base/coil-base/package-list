@@ -105,7 +105,6 @@ $dokka.location:coil.drawable/CrossfadeDrawable/getAlpha/#/PointingToDeclaration
 $dokka.location:coil.drawable/CrossfadeDrawable/getColorFilter/#/PointingToDeclaration/coil-base/coil.drawable/-crossfade-drawable/get-color-filter.html
 $dokka.location:coil.drawable/CrossfadeDrawable/getIntrinsicHeight/#/PointingToDeclaration/coil-base/coil.drawable/-crossfade-drawable/get-intrinsic-height.html
 $dokka.location:coil.drawable/CrossfadeDrawable/getIntrinsicWidth/#/PointingToDeclaration/coil-base/coil.drawable/-crossfade-drawable/get-intrinsic-width.html
-$dokka.location:coil.drawable/CrossfadeDrawable/getOpacity/#/PointingToDeclaration/coil-base/coil.drawable/-crossfade-drawable/get-opacity.html
 $dokka.location:coil.drawable/CrossfadeDrawable/invalidateDrawable/#android.graphics.drawable.Drawable/PointingToDeclaration/coil-base/coil.drawable/-crossfade-drawable/invalidate-drawable.html
 $dokka.location:coil.drawable/CrossfadeDrawable/isRunning/#/PointingToDeclaration/coil-base/coil.drawable/-crossfade-drawable/is-running.html
 $dokka.location:coil.drawable/CrossfadeDrawable/preferExactIntrinsicSize/#/PointingToDeclaration/coil-base/coil.drawable/-crossfade-drawable/prefer-exact-intrinsic-size.html
