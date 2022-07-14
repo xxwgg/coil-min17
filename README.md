@@ -20,9 +20,21 @@ Not Supported compose
 
 ## Download
 
-Coil is available on `mavenCentral()`.
+Just available on `mavenLocal()`.
 
-```kotlin
-implementation("io.coil-kt:coil:2.1.0")
+## Step
+
+1.clone this
+
+2.build :
+```shell
+./gradlew publishToMavenLocal --no-daemon --no-parallel
 ```
+3.add mavenLocal() to your project
 
+4.add dependencies
+```kotlin
+implementation("com.github.xxwgg:coil:2.1.0-min17-SNAPSHOT")
+implementation("com.github.xxwgg:coil-gif:2.1.0-min17-SNAPSHOT")
+//...
+```
