@@ -27,7 +27,6 @@ setupAppModule {
 
 dependencies {
     implementation(projects.coilSampleCommon)
-    implementation(projects.coilComposeSingleton)
     implementation(projects.coilGif)
     implementation(projects.coilSvg)
     implementation(projects.coilVideo)

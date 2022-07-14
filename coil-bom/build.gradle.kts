@@ -11,8 +11,6 @@ dependencies {
     constraints {
         api(projects.coilBase)
         api(projects.coilSingleton)
-        api(projects.coilComposeBase)
-        api(projects.coilComposeSingleton)
         api(projects.coilGif)
         api(projects.coilSvg)
         api(projects.coilVideo)
