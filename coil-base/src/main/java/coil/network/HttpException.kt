@@ -9,4 +9,4 @@ import okhttp3.Response
  * @see HttpUriFetcher
  */
 class HttpException(val response: Response) :
-    RuntimeException("HTTP ${response.code}: ${response.message}")
+    RuntimeException("HTTP ${response.code()}: ${response.message()}")

@@ -32,9 +32,7 @@ plugins {
 extensions.configure<ApiValidationExtension> {
     ignoredProjects += arrayOf(
         "coil-sample-common",
-        "coil-sample-compose",
-        "coil-sample-view",
-        "coil-test"
+        "coil-sample-view"
     )
 }
 

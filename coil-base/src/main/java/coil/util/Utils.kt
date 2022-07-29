@@ -14,6 +14,7 @@ import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
 import android.graphics.drawable.VectorDrawable
 import android.net.Uri
+import android.os.Build
 import android.os.Build.VERSION.SDK_INT
 import android.os.Looper
 import android.view.View
@@ -83,7 +84,11 @@ internal val Drawable.height: Int
     get() = (this as? BitmapDrawable)?.bitmap?.height ?: intrinsicHeight
 
 internal val Drawable.isVector: Boolean
-    get() = this is VectorDrawable || this is VectorDrawableCompat
+    get() = if (SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+        this is VectorDrawable || this is VectorDrawableCompat
+    } else {
+        this is VectorDrawableCompat
+    }
 
 internal fun Closeable.closeQuietly() {
     try {

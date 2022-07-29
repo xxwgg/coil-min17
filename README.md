@@ -15,6 +15,7 @@ Made with ❤️ at [Instacart](https://www.instacart.com). Translations: [한�
 
 ```
 Change minSdk=17 from 21
+change okhttp version = 3.12.13
 Not Supported compose
 ```
 

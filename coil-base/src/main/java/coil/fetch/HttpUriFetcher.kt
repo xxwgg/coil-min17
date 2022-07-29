@@ -153,10 +153,10 @@ internal class HttpUriFetcher(
 
         try {
             // Write the response to the disk cache.
-            if (response.code == HTTP_NOT_MODIFIED && cacheResponse != null) {
+            if (response.code() == HTTP_NOT_MODIFIED && cacheResponse != null) {
                 // Only update the metadata.
                 val combinedResponse = response.newBuilder()
-                    .headers(combineHeaders(cacheResponse.responseHeaders, response.headers))
+                    .headers(combineHeaders(cacheResponse.responseHeaders, response.headers()))
                     .build()
                 fileSystem.write(editor.metadata) {
                     CacheResponse(combinedResponse).writeTo(this)
@@ -167,7 +167,7 @@ internal class HttpUriFetcher(
                     CacheResponse(response).writeTo(this)
                 }
                 fileSystem.write(editor.data) {
-                    response.body!!.source().readAll(this)
+                    response.body()!!.source().readAll(this)
                 }
             }
             return editor.commitAndGet()
@@ -222,8 +222,8 @@ internal class HttpUriFetcher(
             // Suspend and enqueue the request on one of OkHttp's dispatcher threads.
             callFactory.value.newCall(request).await()
         }
-        if (!response.isSuccessful && response.code != HTTP_NOT_MODIFIED) {
-            response.body?.closeQuietly()
+        if (!response.isSuccessful && response.code() != HTTP_NOT_MODIFIED) {
+            response.body()?.closeQuietly()
             throw HttpException(response)
         }
         return response
@@ -269,11 +269,11 @@ internal class HttpUriFetcher(
     }
 
     private fun Response.toDataSource(): DataSource {
-        return if (networkResponse != null) DataSource.NETWORK else DataSource.DISK
+        return if (networkResponse() != null) DataSource.NETWORK else DataSource.DISK
     }
 
     private fun Response.requireBody(): ResponseBody {
-        return checkNotNull(body) { "response body == null" }
+        return checkNotNull(body()) { "response body == null" }
     }
 
     private val diskCacheKey get() = options.diskCacheKey ?: url

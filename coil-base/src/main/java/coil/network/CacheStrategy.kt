@@ -54,7 +54,7 @@ internal class CacheStrategy private constructor(
                 sentRequestMillis = cacheResponse.sentRequestAtMillis
                 receivedResponseMillis = cacheResponse.receivedResponseAtMillis
                 val headers = cacheResponse.responseHeaders
-                for (i in 0 until headers.size) {
+                for (i in 0 until headers.size()) {
                     val name = headers.name(i)
                     when {
                         name.equals("Date", ignoreCase = true) -> {
@@ -99,29 +99,29 @@ internal class CacheStrategy private constructor(
                 return CacheStrategy(request, null)
             }
 
-            val requestCaching = request.cacheControl
-            if (requestCaching.noCache || hasConditions(request)) {
+            val requestCaching = request.cacheControl()
+            if (requestCaching.noCache() || hasConditions(request)) {
                 return CacheStrategy(request, null)
             }
 
             val ageMillis = cacheResponseAge()
             var freshMillis = computeFreshnessLifetime()
 
-            if (requestCaching.maxAgeSeconds != -1) {
-                freshMillis = min(freshMillis, SECONDS.toMillis(requestCaching.maxAgeSeconds.toLong()))
+            if (requestCaching.maxAgeSeconds() != -1) {
+                freshMillis = min(freshMillis, SECONDS.toMillis(requestCaching.maxAgeSeconds().toLong()))
             }
 
             var minFreshMillis = 0L
-            if (requestCaching.minFreshSeconds != -1) {
-                minFreshMillis = SECONDS.toMillis(requestCaching.minFreshSeconds.toLong())
+            if (requestCaching.minFreshSeconds() != -1) {
+                minFreshMillis = SECONDS.toMillis(requestCaching.minFreshSeconds().toLong())
             }
 
             var maxStaleMillis = 0L
-            if (!responseCaching.mustRevalidate && requestCaching.maxStaleSeconds != -1) {
-                maxStaleMillis = SECONDS.toMillis(requestCaching.maxStaleSeconds.toLong())
+            if (!responseCaching.mustRevalidate() && requestCaching.maxStaleSeconds() != -1) {
+                maxStaleMillis = SECONDS.toMillis(requestCaching.maxStaleSeconds().toLong())
             }
 
-            if (!responseCaching.noCache && ageMillis + minFreshMillis < freshMillis + maxStaleMillis) {
+            if (!responseCaching.noCache() && ageMillis + minFreshMillis < freshMillis + maxStaleMillis) {
                 return CacheStrategy(null, cacheResponse)
             }
 
@@ -158,8 +158,8 @@ internal class CacheStrategy private constructor(
          */
         private fun computeFreshnessLifetime(): Long {
             val responseCaching = cacheResponse!!.cacheControl
-            if (responseCaching.maxAgeSeconds != -1) {
-                return SECONDS.toMillis(responseCaching.maxAgeSeconds.toLong())
+            if (responseCaching.maxAgeSeconds() != -1) {
+                return SECONDS.toMillis(responseCaching.maxAgeSeconds().toLong())
             }
 
             val expires = expires
@@ -169,7 +169,7 @@ internal class CacheStrategy private constructor(
                 return if (delta > 0L) delta else 0L
             }
 
-            if (lastModified != null && request.url.query == null) {
+            if (lastModified != null && request.url().query() == null) {
                 // As recommended by the HTTP RFC and implemented in Firefox, the max age of a
                 // document should be defaulted to 10% of the document's age at the time it was
                 // served. Default expiration dates aren't used for URIs containing a query.
@@ -219,15 +219,15 @@ internal class CacheStrategy private constructor(
         /** Returns true if the response can be stored to later serve another request. */
         fun isCacheable(request: Request, response: Response): Boolean {
             // A 'no-store' directive on request or response prevents the response from being cached.
-            return !request.cacheControl.noStore && !response.cacheControl.noStore &&
+            return !request.cacheControl().noStore() && !response.cacheControl().noStore() &&
                 // Vary all responses cannot be cached.
-                response.headers["Vary"] != "*"
+                response.headers()["Vary"] != "*"
         }
 
         /** Returns true if the response can be stored to later serve another request. */
         fun isCacheable(request: Request, response: CacheResponse): Boolean {
             // A 'no-store' directive on request or response prevents the response from being cached.
-            return !request.cacheControl.noStore && !response.cacheControl.noStore &&
+            return !request.cacheControl().noStore() && !response.cacheControl.noStore() &&
                 // Vary all responses cannot be cached.
                 response.responseHeaders["Vary"] != "*"
         }
@@ -236,7 +236,7 @@ internal class CacheStrategy private constructor(
         fun combineHeaders(cachedHeaders: Headers, networkHeaders: Headers): Headers {
             val result = Headers.Builder()
 
-            for (index in 0 until cachedHeaders.size) {
+            for (index in 0 until cachedHeaders.size()) {
                 val name = cachedHeaders.name(index)
                 val value = cachedHeaders.value(index)
                 if ("Warning".equals(name, ignoreCase = true) && value.startsWith("1")) {
@@ -248,7 +248,7 @@ internal class CacheStrategy private constructor(
                 }
             }
 
-            for (index in 0 until networkHeaders.size) {
+            for (index in 0 until networkHeaders.size()) {
                 val fieldName = networkHeaders.name(index)
                 if (!isContentSpecificHeader(fieldName) && isEndToEnd(fieldName)) {
                     result.add(fieldName, networkHeaders.value(index))

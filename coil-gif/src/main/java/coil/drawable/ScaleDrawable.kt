@@ -1,14 +1,11 @@
 package coil.drawable
 
 import android.content.res.ColorStateList
-import android.graphics.BlendMode
-import android.graphics.Canvas
-import android.graphics.ColorFilter
-import android.graphics.PorterDuff
-import android.graphics.Rect
+import android.graphics.*
 import android.graphics.drawable.Animatable
 import android.graphics.drawable.AnimatedImageDrawable
 import android.graphics.drawable.Drawable
+import android.os.Build
 import androidx.annotation.RequiresApi
 import androidx.core.graphics.withSave
 import coil.decode.DecodeUtils
@@ -42,7 +39,11 @@ class ScaleDrawable @JvmOverloads constructor(
         }
     }
 
-    override fun getAlpha() = child.alpha
+    override fun getAlpha() = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+        child.alpha
+    } else {
+        255
+    }
 
     override fun setAlpha(alpha: Int) {
         child.alpha = alpha
@@ -52,7 +53,11 @@ class ScaleDrawable @JvmOverloads constructor(
     @Suppress("DEPRECATION")
     override fun getOpacity() = child.opacity
 
-    override fun getColorFilter() = child.colorFilter
+    override fun getColorFilter() = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+        child.colorFilter
+    } else {
+        null
+    }
 
     override fun setColorFilter(colorFilter: ColorFilter?) {
         child.colorFilter = colorFilter
@@ -71,7 +76,8 @@ class ScaleDrawable @JvmOverloads constructor(
 
         val targetWidth = bounds.width()
         val targetHeight = bounds.height()
-        val multiplier = DecodeUtils.computeSizeMultiplier(width, height, targetWidth, targetHeight, scale)
+        val multiplier =
+            DecodeUtils.computeSizeMultiplier(width, height, targetWidth, targetHeight, scale)
 
         val left = ((targetWidth - multiplier * width) / 2).roundToInt()
         val top = ((targetHeight - multiplier * height) / 2).roundToInt()
@@ -96,13 +102,29 @@ class ScaleDrawable @JvmOverloads constructor(
 
     override fun invalidateDrawable(who: Drawable) = invalidateSelf()
 
-    override fun scheduleDrawable(who: Drawable, what: Runnable, `when`: Long) = scheduleSelf(what, `when`)
+    override fun scheduleDrawable(who: Drawable, what: Runnable, `when`: Long) =
+        scheduleSelf(what, `when`)
 
-    override fun setTint(tintColor: Int) = child.setTint(tintColor)
+    override fun setTint(tintColor: Int) =
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            child.setTint(tintColor)
+        } else {
+            //
+        }
 
-    override fun setTintList(tint: ColorStateList?) = child.setTintList(tint)
+    override fun setTintList(tint: ColorStateList?) =
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            child.setTintList(tint)
+        } else {
+            //
+        }
 
-    override fun setTintMode(tintMode: PorterDuff.Mode?) = child.setTintMode(tintMode)
+    override fun setTintMode(tintMode: PorterDuff.Mode?) =
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            child.setTintMode(tintMode)
+        } else {
+            //
+        }
 
     @RequiresApi(29)
     override fun setTintBlendMode(blendMode: BlendMode?) = child.setTintBlendMode(blendMode)

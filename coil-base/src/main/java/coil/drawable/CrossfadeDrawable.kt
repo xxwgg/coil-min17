@@ -1,14 +1,10 @@
 package coil.drawable
 
 import android.content.res.ColorStateList
-import android.graphics.BlendMode
-import android.graphics.Canvas
-import android.graphics.ColorFilter
-import android.graphics.PixelFormat
-import android.graphics.PorterDuff
-import android.graphics.Rect
+import android.graphics.*
 import android.graphics.drawable.Animatable
 import android.graphics.drawable.Drawable
+import android.os.Build
 import android.os.SystemClock
 import androidx.annotation.RequiresApi
 import androidx.annotation.VisibleForTesting
@@ -47,8 +43,10 @@ class CrossfadeDrawable @JvmOverloads constructor(
 
     private val callbacks = mutableListOf<Animatable2Compat.AnimationCallback>()
 
-    private val intrinsicWidth = computeIntrinsicDimension(start?.intrinsicWidth, end?.intrinsicWidth)
-    private val intrinsicHeight = computeIntrinsicDimension(start?.intrinsicHeight, end?.intrinsicHeight)
+    private val intrinsicWidth =
+        computeIntrinsicDimension(start?.intrinsicWidth, end?.intrinsicWidth)
+    private val intrinsicHeight =
+        computeIntrinsicDimension(start?.intrinsicHeight, end?.intrinsicHeight)
 
     private var startTimeMillis = 0L
     private var maxAlpha = 255
@@ -138,9 +136,21 @@ class CrossfadeDrawable @JvmOverloads constructor(
     }
 
     override fun getColorFilter(): ColorFilter? = when (state) {
-        STATE_START -> start?.colorFilter
-        STATE_RUNNING -> end?.colorFilter ?: start?.colorFilter
-        STATE_DONE -> end?.colorFilter
+        STATE_START -> if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            start?.colorFilter
+        } else {
+            null
+        }
+        STATE_RUNNING -> if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            end?.colorFilter ?: start?.colorFilter
+        } else {
+            null
+        }
+        STATE_DONE -> if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            end?.colorFilter
+        } else {
+            null
+        }
         else -> null
     }
 
@@ -174,21 +184,28 @@ class CrossfadeDrawable @JvmOverloads constructor(
 
     override fun invalidateDrawable(who: Drawable) = invalidateSelf()
 
-    override fun scheduleDrawable(who: Drawable, what: Runnable, `when`: Long) = scheduleSelf(what, `when`)
+    override fun scheduleDrawable(who: Drawable, what: Runnable, `when`: Long) =
+        scheduleSelf(what, `when`)
 
     override fun setTint(tintColor: Int) {
-        start?.setTint(tintColor)
-        end?.setTint(tintColor)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            start?.setTint(tintColor)
+            end?.setTint(tintColor)
+        }
     }
 
     override fun setTintList(tint: ColorStateList?) {
-        start?.setTintList(tint)
-        end?.setTintList(tint)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            start?.setTintList(tint)
+            end?.setTintList(tint)
+        }
     }
 
     override fun setTintMode(tintMode: PorterDuff.Mode?) {
-        start?.setTintMode(tintMode)
-        end?.setTintMode(tintMode)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            start?.setTintMode(tintMode)
+            end?.setTintMode(tintMode)
+        }
     }
 
     @RequiresApi(29)
@@ -245,7 +262,8 @@ class CrossfadeDrawable @JvmOverloads constructor(
 
         val targetWidth = targetBounds.width()
         val targetHeight = targetBounds.height()
-        val multiplier = DecodeUtils.computeSizeMultiplier(width, height, targetWidth, targetHeight, scale)
+        val multiplier =
+            DecodeUtils.computeSizeMultiplier(width, height, targetWidth, targetHeight, scale)
         val dx = ((targetWidth - multiplier * width) / 2).roundToInt()
         val dy = ((targetHeight - multiplier * height) / 2).roundToInt()
 

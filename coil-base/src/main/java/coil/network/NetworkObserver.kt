@@ -7,8 +7,10 @@ import android.net.ConnectivityManager
 import android.net.Network
 import android.net.NetworkCapabilities.NET_CAPABILITY_INTERNET
 import android.net.NetworkRequest
+import android.os.Build
 import android.util.Log
 import androidx.annotation.MainThread
+import androidx.annotation.RequiresApi
 import androidx.core.content.getSystemService
 import coil.network.NetworkObserver.Listener
 import coil.util.Logger
@@ -30,7 +32,11 @@ internal fun NetworkObserver(
     }
 
     return try {
-        RealNetworkObserver(connectivityManager, listener)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            RealNetworkObserver(connectivityManager, listener)
+        } else {
+            EmptyNetworkObserver()
+        }
     } catch (e: Exception) {
         logger?.log(TAG, RuntimeException("Failed to register network observer.", e))
         EmptyNetworkObserver()
@@ -68,6 +74,7 @@ internal class EmptyNetworkObserver : NetworkObserver {
 
 @SuppressLint("MissingPermission")
 @Suppress("DEPRECATION") // TODO: Remove uses of 'allNetworks'.
+@RequiresApi(Build.VERSION_CODES.LOLLIPOP)
 private class RealNetworkObserver(
     private val connectivityManager: ConnectivityManager,
     private val listener: Listener

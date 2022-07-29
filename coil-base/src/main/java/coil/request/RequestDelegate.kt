@@ -1,5 +1,6 @@
 package coil.request
 
+import android.os.Build
 import androidx.annotation.MainThread
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.Lifecycle
@@ -68,9 +69,11 @@ internal class ViewTargetRequestDelegate(
     }
 
     override fun assertActive() {
-        if (!target.view.isAttachedToWindow) {
-            target.view.requestManager.setRequest(this)
-            throw CancellationException("'ViewTarget.view' must be attached to a window.")
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            if (!target.view.isAttachedToWindow) {
+                target.view.requestManager.setRequest(this)
+                throw CancellationException("'ViewTarget.view' must be attached to a window.")
+            }
         }
     }
 
